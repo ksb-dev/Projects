@@ -1,0 +1,107 @@
+.field {
+  position: relative;
+
+  .input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 5px;
+    padding: 8px 1rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    min-height: 45px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      background: var(--white);
+      left: 0.5rem;
+      top: 0.6rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      padding: 0 0.5rem;
+      padding-top: 0.1rem;
+      margin-right: 2rem;
+      font-size: 0.9rem;
+      backface-visibility: hidden;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    i {
+      transition: all 0.3s ease;
+    }
+  }
+
+  .options {
+    position: absolute;
+    background: var(--white);
+    box-shadow: 0 2px 5px #000;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 0;
+    top: 3rem;
+    transition: scale(0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1;
+    max-height: 228px;
+    overflow: auto;
+
+    .option {
+      cursor: pointer;
+      text-transform: capitalize;
+      padding: 0.7rem;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      color: var(--dark);
+      border-bottom: 1px solid var(--grey);
+      transition: all 0.3s ease;
+    }
+
+    .option:last-child {
+      border-bottom: none;
+    }
+
+    .option:hover {
+      background: var(--grey);
+    }
+  }
+}
+
+.greyBorder {
+  //border: 2px solid var(--grey);
+  box-shadow: 0 0 3px #000;
+}
+
+.blueBorder {
+  //box-shadow: none !important;
+  //border: 2px solid var(--blue);
+  box-shadow: 0 0 5px var(--blue);
+}
+
+.greyColor {
+  color: var(--dark);
+}
+
+.blueColor {
+  color: var(--blue);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  //border-right: 2px solid #fff;
+  //border-left: 2px solid #fff;
+  //background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: var(--blue);
+  border-radius: 5px;
+}

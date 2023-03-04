@@ -1,0 +1,128 @@
+/*@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --primary-color: rgb(255, 215, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /*background-image: url('money1.jpg');*/
+    /*background: lightcyan;*/
+    background: #8DE4AF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.fas {
+    color: black;
+    text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+i {
+    color: var(--primary-color);
+}
+
+h1 {
+    letter-spacing: 2px;
+    color: black;
+    /*background-color: black;*/
+    padding: 10px;
+    /*border-radius: 50px;*/
+    /*text-shadow: 3px 1px 1px black;*/
+    opacity: 0.8;
+    /*font-size: 30px;*/
+}
+
+.btn {
+    color: #fff;
+    background: #0A3A67;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    background-color: black;
+    background: #389583;
+    padding: 30px 30px;
+    border-radius: 5px;
+    /*box-shadow: 5px 5px 5px black;*/
+    opacity: 0.8;
+    width: 350px;
+}
+
+.money-img {
+    width: 150px;
+}
+
+.currency {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select {
+    padding: 7px;
+    margin-right: 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.currency input {
+    border: 0;
+    background: white;
+    font-size: 30px;
+    text-align: right;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    background-color: rgb(255, 215, 0);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 10px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    opacity: 0;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+@media (max-width: 600px) {
+    .currency input {
+        width: 200px;
+    }
+
+    h1 {
+        width: 220px;
+        padding: 10px 20px;
+    }
+}

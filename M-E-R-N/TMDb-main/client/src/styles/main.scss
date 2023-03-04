@@ -1,0 +1,379 @@
+#root {
+  --primary: #f5c518;
+  // --primary: #1db954;
+  // --primary: #1da1f2;
+  // --primary: #e50914;
+  //--primary: goldenrod;
+  --secondary: #e50914;
+
+  --green: #1db954;
+  --gold: gold;
+  --gold-1: goldenrod;
+  --blue: #1da1f2;
+  --red: #e50914;
+  //--red: tomato;
+
+  --blue-2: #01b4e4;
+  --blue-3: #0d253f;
+  --blue-4: #061628;
+  --green-1: #90cea1;
+
+  --white-1: #fff;
+  --white-2: rgb(220, 220, 220);
+
+  //--dark-2: #393e46;
+  --dark-1: #222222;
+
+  //--dark-1: #222831;
+  --dark-2: #333333;
+  //--dark-1: #444444;
+
+  //--dark-2: #222222;
+  //--dark-2: #1f1f1f;
+
+  --whiteAlpha-1: rgba(255, 255, 255, 0.9);
+  --whiteAlpha-2: rgba(220, 220, 220, 0.9);
+  --whiteAlpha-3: rgba(255, 255, 255, 0.5);
+  --whiteAlpha-4: rgba(220, 220, 220, 0.5);
+  --whiteAlpha-5: rgba(255, 255, 255, 0.9);
+  --whiteAlpha-6: rgba(220, 220, 220, 0.9);
+
+  --darkAplha-1: rgba(51, 51, 51, 0.9);
+  --darkAplha-1: rgba(34, 34, 34, 0.9);
+  --darkAlpha-2: rgba(34, 34, 34, 0.9);
+  --darkAplha-3: rgba(51, 51, 51, 0.5);
+  --darkAlpha-4: rgba(34, 34, 34, 0.75);
+  --darkAplha-5: rgba(34, 34, 34, 0.9);
+  --darkAlpha-6: rgba(34, 34, 34, 0.9);
+
+  --border-radius-1: 3px;
+  --border-radius-2: 10px;
+  --border-radius-2: 15px;
+
+  --font-size-1: 1.1rem;
+  --font-size-2: 1.2rem;
+  --font-size-3: 1.3rem;
+  --font-size-4: 1.4rem;
+  --font-size-5: 1.5rem;
+
+  --font-weight-1: 400;
+  --font-weight-2: 500;
+  --font-weight-3: 600;
+  --font-weight-4: 700;
+  --font-weight-5: 900;
+
+  --transition: all 0.3s ease;
+}
+
+.primaryBg {
+  font-weight: 700 !important;
+  background: var(--primary);
+  color: #000;
+}
+
+.secondaryBg {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.lightBg1 {
+  background: var(--white-1);
+}
+
+.lightBg2 {
+  background: var(--white-2);
+}
+
+.darkBg1 {
+  background: var(--dark-1);
+}
+
+.darkBg2 {
+  background: var(--dark-2);
+}
+
+.lightColor1 {
+  color: var(--white-1);
+}
+
+.lightColor2 {
+  color: var(--white-2);
+}
+
+.darkColor1 {
+  color: var(--dark-1);
+}
+
+.darkColor2 {
+  color: var(--dark-2);
+}
+
+.lightAlpha1 {
+  background: var(--whiteAlpha-1);
+}
+
+.lightAlpha2 {
+  background: var(--whiteAlpha-2);
+}
+
+.lightAlpha3 {
+  background: var(--whiteAlpha-3);
+}
+
+.lightAlpha4 {
+  background: var(--whiteAlpha-4);
+}
+
+.lightAlpha5 {
+  background: var(--whiteAlpha-5);
+}
+
+.lightAlpha6 {
+  background: var(--whiteAlpha-6);
+}
+
+.darkAlpha1 {
+  background: var(--darkAplha-1);
+}
+
+.darkAlpha2 {
+  background: var(--darkAlpha-2);
+}
+
+.darkAlpha3 {
+  background: var(--darkAplha-3);
+}
+
+.darkAlpha4 {
+  background: var(--darkAlpha-4);
+}
+
+.darkAlpha5 {
+  background: var(--darkAplha-5);
+}
+
+.darkAlpha6 {
+  background: var(--darkAplha-6);
+}
+
+.lightGradient1 {
+  //box-shadow: 0px 15px 10px -15px #111;
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.darkGradient {
+  background: linear-gradient(
+    to right top,
+    rgba(34, 34, 34, 1) 20%,
+    rgba(34, 34, 34, 0)
+  );
+}
+
+.lightGradient {
+  background: linear-gradient(
+    to right top,
+    rgba(220, 220, 220, 1) 20%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.darkGradient1 {
+  //box-shadow: 0px 15px 10px -15px #111;
+  background: linear-gradient(
+    to right top,
+    rgb(51, 51, 51, 1) 20%,
+    rgba(34, 34, 34, 0)
+  );
+}
+
+.lightCoverGradient {
+  background: linear-gradient(
+    to right top,
+    #fff 20%,
+    rgba(255, 255, 255, 0.75)
+  );
+}
+
+.darkCoverGradient {
+  background: linear-gradient(
+    to right top,
+    rgb(51, 51, 51, 1) 20%,
+    rgb(51, 51, 51, 0.75)
+  );
+}
+
+.lightBoxShadow {
+  box-shadow: 0px 1px 5px var(--white-1);
+}
+
+.darkBoxShadow {
+  box-shadow: 0px 1px 5px var(--dark-2);
+}
+
+.lightBorderBottom {
+  border-bottom: 2px solid var(--white-1) !important;
+}
+
+.darkBorderBottom {
+  border-bottom: 2px solid var(--dark-1) !important;
+}
+
+.whiteBorder {
+  //border: 2px solid #fff;
+  box-shadow: 0 0 3px #fff;
+}
+
+.blackBorder {
+  //border: 2px solid var(--dark-1);
+  box-shadow: 0 0 3px var(--dark-1);
+}
+
+.lightCardInfo {
+  background: rgba(250, 250, 250, 0.9);
+  color: var(--dark-1);
+  outline: 2px solid var(--primary);
+}
+
+.darkCardInfo {
+  background: rgba(17, 17, 17, 0.9);
+  color: #fff;
+  outline: 2px solid var(--primary);
+}
+
+.greenBg {
+  background-color: green;
+  color: #fff !important;
+}
+
+.orangeBg {
+  background-color: darkorange;
+  color: #fff !important;
+}
+
+.redBg {
+  background-color: red;
+  color: #fff !important;
+}
+
+.greenColor {
+  color: var(--green);
+}
+
+.orangeColor {
+  color: orange;
+}
+
+.redColor {
+  color: red;
+}
+
+.lightActive {
+  background: var(--white-2);
+  border-left: none !important;
+}
+
+.darkActive {
+  background: var(--dark-1);
+  border-left: none !important;
+}
+
+.lightCardBorder {
+  border: 5px solid #fff;
+}
+
+.darkCardBorder {
+  border: 5px solid var(--dark-1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  //box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+@import '../app';
+
+// components
+@import '../components/Header/header';
+@import '../components/Header/SmallHeader/smallHeader';
+@import '../components/Header/Logout/logout';
+
+@import '../components/MovieList/movieList';
+@import '../components/MovieList/MovieCard/movieCard';
+@import '../components/MovieList/Pagination/pagination';
+@import '../components/MovieList/Sort/sort';
+
+@import '../components/TvList/tvList';
+@import '../components/TvList/TvCard/tvCard';
+@import '../components/TvList/Pagination/pagination';
+
+@import '../components/Menu/menu';
+
+@import '../components/Search/search';
+@import '../components/SearchResults/searchResults';
+@import '../components/SearchModal/searchModal';
+
+@import '../components/MovieInfo/movieInfo';
+@import '../components/TvInfo/tvInfo';
+@import '../components/CastBackdropsVideo/castBackdropsVideo';
+@import '../components/CastBackdropsVideo/Cast/cast';
+@import '../components/CastBackdropsVideo/Cast/Actor/actor';
+@import '../components/CastBackdropsVideo/Backdrops/backdrops';
+@import '../components/CastBackdropsVideo/Backdrops/Backdrop/backdrop';
+@import '../components/CastBackdropsVideo/Videos/videos';
+@import '../components/CastBackdropsVideo/Videos/Video/video';
+
+@import '../components/Reviews/reviews';
+@import '../components/Reviews/Review/review';
+
+@import '../components/ImageViewer/imageViewer';
+
+@import '../components/PlayerOne/playerOne';
+
+// pages
+@import '../pages/Home/home';
+@import '../pages/Search/search';
+@import '../pages/Login/login';
+@import '../pages/Register/register';
+@import '../Pages/Watchlist/watchlist';
+@import '../pages/MovieDetail/movieDetail';
+@import '../pages/TvDetail/tvDetail';
+@import '../pages/ActorDetail/actorDetail';
+
+// other
+@import '../other/Loading/loading';
+@import '../other/LoadingOne/loadingOne';
+@import '../other/Error/error';
+@import '../other/WatchlistIcon/watchlistIcon';
+@import '../other/MenuIcon/menuIcon';
+@import '../other/Options/options';
+@import '../other/Switch/switch';
+@import '../other/VideoPlayer/videoPlayer';
+@import '../other/Iframe/iframe';
+
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #999; /* color of the scroll thumb */
+  //border-radius: 20px; /* roundness of the scroll thumb */
+  //border: 3px solid #fff; /* creates padding around scroll thumb */
+}

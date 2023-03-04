@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Taskivity</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <div class="box-1">
+          <span>Taskivity</span>
+
+          <form id="task-form">
+            <input
+              type="text"
+              name="task"
+              id="task"
+              placeholder="Enter task"
+              autocomplete="off"
+            />
+
+            <button type="submit" class="addBtn">
+              <i class="fa-solid fa-plus fa-2x"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="box-2">
+          <!-- <span>Tasks</span> -->
+
+          <div class="box-2-inner">
+            <input type="text" name="filter" id="filter" placeholder="Filter" />
+          </div>
+
+          <ul class="collection"></ul>
+          <a href="#" class="clear-tasks">CLEAR</a>
+        </div>
+      </div>
+
+      <div class="box-3 hide">
+        <form id="edit-form">
+          <span>Edit Task</span>
+          <input type="text" id="edit" placeholder="Edit task" />
+
+          <div class="edit-cancel">
+            <button type="submit" class="editBtn">Edit</button>
+            <button type="submit" class="cancelBtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

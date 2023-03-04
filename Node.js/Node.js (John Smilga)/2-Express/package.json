@@ -1,0 +1,18 @@
+{
+  "name": "express-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-globals.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

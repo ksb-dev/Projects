@@ -1,0 +1,81 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .title h1 {
+  background: linear-gradient(to right, #90cea1, #01b4e4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  letter-spacing: 5px;
+}
+
+.main .signup-form h2 {
+  background: linear-gradient(to right, #90cea1, #01b4e4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main .signup-form label span {
+  background: linear-gradient(to right, #90cea1, #01b4e4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main .signup-form {
+  min-width: 360px;
+  max-width: 360px;
+  padding: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 3px;
+}
+
+.main .signup-form label {
+  display: block;
+  margin: 30px auto;
+}
+
+.main .signup-form span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.main .signup-form input {
+  padding: 8px 6px;
+  font-size: 1em;
+  color: #777;
+  width: 100%;
+  border: none;
+}
+
+.main .signup-form input:focus {
+  outline: none;
+}
+
+.main .signup-form h4 {
+  margin-top: 1rem;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.main .signup-form .btn {
+  background: transparent;
+  border: 2px solid #90cea1;
+  background: linear-gradient(to right, #90cea1, #01b4e4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  margin-right: 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}

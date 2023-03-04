@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background: #0d253f;
+}
+
+.select-box,
+.play-board,
+.result-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Select Box */
+
+.select-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  max-width: 350px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.select-box .name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.select-box .content .ask {
+  font-weight: 500;
+  margin: 1rem 0.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.select-box .content .options {
+  display: flex;
+  width: 100%;
+}
+
+.select-box .content .options button {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background: #01b4e4;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.select-box .content .options button:hover,
+.result-box .replay button:hover {
+  transform: scale(0.95);
+}
+
+.select-box .content .options button.playerX {
+  margin-right: 0.2rem;
+}
+
+.select-box .content .options button.playerO {
+  margin-left: 0.2rem;
+}
+
+/* Play Board */
+
+.play-board {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: all 0.3s ease;
+}
+
+.play-board.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.play-board .turn {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.play-board .turn .players {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.play-board .turn .players span {
+  color: #01b4e4;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: default;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+/*.play-board .turn .players span.active {
+  background: #01b4e4;
+  color: #fff;
+}*/
+
+.play-board .turn .players .slider {
+  position: absolute;
+  background: #01b4e4;
+  border-radius: 5px;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+
+  transition: all 0.3s ease;
+}
+
+.play-board .turn .players span:first-child {
+  color: #fff;
+}
+
+.play-board .turn .players.active span:first-child {
+  color: #01b4e4;
+}
+
+.play-board .turn .players.active span:nth-child(2) {
+  color: #fff;
+}
+
+.play-board .turn .players.active .slider {
+  left: 50%;
+}
+
+.play-board .play-area {
+  margin-top: 1.5rem;
+}
+
+.play-board .play-area section {
+  display: flex;
+}
+
+.play-board .play-area section span {
+  margin: 0.25rem;
+  display: block;
+  height: 80px;
+  width: 80px;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 80px;
+  color: #01b4e4;
+}
+
+/* Result Box */
+
+.result-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  max-width: 350px;
+  width: 100%;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: all 0.3s ease;
+}
+
+.result-box.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.result-box .won-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.result-box .won-text span {
+  font-weight: 800;
+}
+
+.result-box .replay {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.result-box .replay button {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  background: #01b4e4;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}

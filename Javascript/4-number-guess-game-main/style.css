@@ -1,0 +1,89 @@
+body {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    margin-top: 280px;
+    font-family: cursive;
+}
+
+.head {
+    margin-top: 20px;
+}
+
+.refresh {
+    margin: 20px;
+    color: White;
+}
+
+.chance {
+    margin: 20px;
+}
+
+.ghost {
+    opacity: 0;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px black;
+}
+
+.btn {
+    margin: 10px;
+    height: 55px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px black;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn:active {
+    box-shadow: 2px 2px 0.5px black;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.h3-game-over {
+    color: red;
+    animation: animate 4s ease-in-out infinite;
+}
+
+.body-game-over {
+    background-color: black;
+}
+
+.h3-correct {
+    color: green;
+    animation: animate 4s ease-in-out infinite;
+}
+
+.body-correct {
+    background-color: rgb(173, 169, 169);
+}
+
+@keyframes animate {
+    50% {
+        font-size: 30px;
+    }
+}

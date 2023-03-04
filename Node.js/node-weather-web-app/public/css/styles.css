@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    color: #fff;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../img/perfect_blue.jpg') center/cover no-repeat;
+}
+
+.main-content {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.main-content .creator {
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.main-content .help {
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.info {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info p {
+    letter-spacing: 1px;
+}
+
+.weather-image {
+    margin-top: 10px;
+}
+
+.fa-cloud-sun-rain {
+    display: inline-block;
+    position: absolute;
+    background: linear-gradient(yellow, orange, orangered);
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px auto;
+    border: 5px solid #fff;
+}
+
+.small {
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    outline: none;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #c4c4c4;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 16px;
+    letter-spacing: 1px;
+}
+
+.portrait {
+    width: 250px;
+    height: 350px;
+}
+
+input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input:focus {
+  border: none; 
+  outline: none; 
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(yellow, orangered);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: linear-gradient(orangered, yellow);
+}
+
+footer h4 span {
+    font-family: cursive;
+}
+
+.messageOne {
+    font-size: 40px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.description {
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 20px;
+}

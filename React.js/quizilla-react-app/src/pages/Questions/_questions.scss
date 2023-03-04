@@ -1,0 +1,192 @@
+.questions {
+  background: var(--blue);
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &__inner {
+    width: 350px;
+    background: var(--white);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--dark);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .number-timer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      padding-top: 0rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+
+      .number {
+        text-transform: capitalize;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        color: var(--dark);
+      }
+
+      .timer {
+        padding-right: 1rem;
+        background: var(--dark);
+        color: var(--white);
+        border-radius: 5px;
+        padding: 0.3rem 0.8rem;
+        padding-top: 0.5rem;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-weight: 300;
+        min-height: 40px;
+
+        span {
+          display: inline-block;
+          width: 20px;
+        }
+      }
+    }
+
+    .question {
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      font-weight: 400;
+      padding: 0 1rem;
+      font-size: 1rem;
+      margin-top: 2rem;
+      color: var(--dark);
+      border-radius: 5px;
+    }
+
+    .answers {
+      padding: 1rem;
+      padding-bottom: 1.5rem;
+      width: 100%;
+
+      p {
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        min-width: 45px;
+      }
+
+      p:hover {
+        box-shadow: 0 0 5px var(--blue);
+        transition: all 0.3s ease;
+      }
+
+      .correct,
+      .incorrect {
+        position: relative;
+
+        span {
+          position: absolute;
+          top: 0.3rem;
+          right: 0.5rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .score-quit-next {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0rem;
+
+      .quit {
+        background: var(--red);
+        color: var(--white);
+        text-transform: capitalize;
+        padding: 0.3rem 0.8rem;
+        padding-top: 0.5rem;
+        // border-top-left-radius: 5px;
+        // border-bottom-left-radius: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 3px red;
+        cursor: pointer;
+        letter-spacing: 1px;
+        font-weight: 300;
+        min-height: 40px;
+      }
+
+      .quit:hover {
+        background: var(--hover2);
+        transition: all 0.3s ease;
+      }
+
+      .score {
+        background: var(--blue);
+        color: #fff;
+        padding: 0.3rem 0rem;
+        padding-top: 0.5rem;
+        width: 122px;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 1px;
+        min-height: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 3px var(--blue);
+      }
+
+      .next {
+        background: var(--dark);
+        color: var(--white);
+        // border-top-right-radius: 5px;
+        // border-bottom-right-radius: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 3px #000;
+        padding: 0.3rem 0.8rem;
+        padding-top: 0.5rem;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        cursor: pointer;
+        font-weight: 300;
+        min-height: 40px;
+      }
+
+      .next:hover {
+        background: var(--hover1);
+        transition: background 0.3s ease;
+      }
+    }
+  }
+}
+
+.correct {
+  background: green;
+  //border: 2px solid green;
+  box-shadow: 0 0 5px green;
+  color: #fff;
+}
+
+.incorrect {
+  //border: 2px solid red;
+  background: red;
+  box-shadow: 0 0 5px red;
+  color: #fff;
+}
+
+.other {
+  //border: 2px solid var(--grey);
+  box-shadow: 0 0 3px #000;
+  color: var(--dark);
+}

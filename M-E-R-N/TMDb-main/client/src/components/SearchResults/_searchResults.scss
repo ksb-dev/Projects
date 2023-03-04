@@ -1,0 +1,130 @@
+.search__results {
+  width: 100%;
+  position: absolute;
+  top: 2.5rem;
+  max-height: 80vh;
+  overflow-y: scroll;
+  border-radius: var(--border-radius-1);
+  box-shadow: 0 3px 5px #000;
+  text-decoration: none;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    text-decoration: none;
+
+    &__card {
+      cursor: pointer;
+      padding: 0.5rem;
+      display: flex;
+      //border-radius: var(--border-radius-1);
+      //box-shadow: 0px 12px 10px -15px #000;
+      border-bottom: 1px solid rgb(156, 156, 156);
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+
+      &__image {
+        height: 75px;
+        margin-right: 1rem;
+        border-radius: var(--border-radius-1);
+        overflow: hidden;
+
+        .img {
+          height: 75px;
+          border-radius: var(--border-radius-1);
+        }
+      }
+
+      &__title-date {
+        display: flex;
+        flex-direction: column;
+
+        span:first-child {
+          font-size: 1rem;
+          font-weight: 500;
+          margin-bottom: 0.25rem;
+          text-decoration: none;
+        }
+
+        span:last-child {
+          font-size: 1rem;
+          font-weight: 400;
+          color: rgb(156, 156, 156);
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__card:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    &__card:hover &__card__image .img {
+      //filter: brightness(80%);
+      transform: scale(1.5);
+      transition: var(--transition);
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .search__results {
+    //background: #fff !important;
+
+    &__inner {
+      //background: #fff !important;
+
+      &__card {
+        //background: #fff !important;
+
+        &__title-date {
+          span {
+            //color: #000 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .search__results {
+    height: 60vh;
+
+    &__inner {
+      &__card {
+        &__title-date {
+          span:first-child {
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+
+          span:last-child {
+            font-size: 0.8rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.scroll-1 {
+  overflow-y: scroll;
+}
+/* width */
+.scroll-1::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scroll-1::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.scroll-1::-webkit-scrollbar-thumb {
+  background-color: #999;
+}

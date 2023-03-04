@@ -1,0 +1,33 @@
+.number {
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    border-radius: 5px;
+    //border: 2px solid var(--grey);
+    border: none;
+    box-shadow: 0 0 3px #000;
+    outline: none;
+    letter-spacing: 1px;
+    height: 45px;
+    color: var(--dark);
+  }
+
+  input:focus {
+    //border: 2px solid var(--blue);
+    box-shadow: 0 0 5px var(--blue);
+    transition: all 0.3s ease;
+  }
+
+  ::placeholder {
+    color: var(--dark);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+}

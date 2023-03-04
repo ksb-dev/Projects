@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background: #4285f4;
+  background: #db3236;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 5rem;
+  overflow: auto;
+}
+
+.inner {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  background: #4285f4;
+  /* margin: 1.2rem 0rem; */
+  /* border-radius: 5px; */
+  padding-bottom: 2rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.box-1 span {
+  padding-bottom: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+form {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  width: 80%;
+  margin-right: 1rem;
+  background: #4285f4;
+  background: transparent;
+  color: #fff;
+  padding-bottom: 0.2rem;
+}
+
+form input::placeholder {
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px;
+}
+
+form input:focus::placeholder {
+  color: transparent;
+}
+
+.addBtn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #4285f4;
+  color: rgba(0, 0, 0, 0.7);
+  border: none;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  transform: rotate(360deg);
+  transition: all 0.3s ease;
+}
+
+.box-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  background: #f4c20d;
+  background: rgb(200, 200, 200);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.box-2-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.box-2-inner input {
+  width: 50%;
+  border: none;
+  outline: none;
+  border-bottom: 1.2px solid rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
+  background: transparent;
+}
+
+.box-2-inner input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px;
+}
+
+.box-2-inner input:focus::placeholder {
+  color: transparent;
+}
+
+ul {
+  width: 90%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(200, 200, 200);
+  background: #fff;
+  color: black;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+ul li:hover {
+  box-shadow: 0 0 5px #000;
+  transition: all 0.3s ease;
+}
+
+ul li span .delete-item {
+  color: red;
+  cursor: pointer;
+}
+
+ul li span .edit-item {
+  color: #4285f4;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+ul li span .delete-item:hover,
+ul li span .edit-item:hover {
+  transform: rotate(10deg) scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.clear-tasks {
+  text-decoration: none;
+  background: linear-gradient(tomato, red);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.clear-tasks:hover {
+  background: linear-gradient(red, tomato);
+}
+
+.box-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 5px #000;
+  border-radius: 5px;
+  background: rgba(66, 133, 244, 0.9);
+  background: rgba(200, 200, 200, 0.9);
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-3 form {
+  background: #333333;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.box-3 form span {
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.box-3 form input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  margin: 1rem;
+  color: #fff;
+}
+
+.box-3 form input::placeholder {
+  color: #fff;
+  font-weight: 700px;
+}
+
+.box-3 form input:focus::placeholder {
+  color: transparent;
+}
+
+.editBtn,
+.cancelBtn {
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
+  margin: 0 0.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.editBtn {
+  background: linear-gradient(#92b6f0, #4285f4e6);
+}
+
+.editBtn:hover {
+  background: linear-gradient(#4285f4e6, #92b6f0);
+}
+
+.cancelBtn {
+  background: linear-gradient(tomato, red);
+}
+
+.cancelBtn:hover {
+  background: linear-gradient(red, tomato);
+}
+
+@media screen and (max-width: 786px) {
+  .inner {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* .inner {
+    width: 70%;
+  } */
+}
+
+.hide {
+  transform: scale(0);
+  z-index: -1;
+  /* display: none; */
+  transition: all 0.3s ease;
+}
+
+.show {
+  transform: scale(1);
+  z-index: 10;
+  /* display: flex; */
+  transition: all 0.3s ease;
+}
